@@ -1,3 +1,4 @@
+var 
 var hora = 5
 console.log(`Agora são exatamente ${hora} horas.`)
 if (hora >= 6 && hora < 12) {
