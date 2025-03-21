@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Nacionalidade</title>
+</head>
+<body>
+    <h1>Sistema de Nacionalidade</h1>
+    Nacionalidade da pessoa: <input type="text" name="nacao" id="nacao">
+    <input type="button" value="Verificar" onclick="verificar()">
+    <div id="resultado">
+
+    </div>
+    <script>
+        function verificar() {
+            var nacao = document.getElementById('nacao').value
+            var resultado = document.getElementById('resultado')
+
+            console.log(`Vivendo em ${nacao}`)
+
+            if (nacao == 'Brasil') {
+                 resultado.innerHTML = '<p>Você é Brasileiro!</p>'
+            } else {
+                 resultado.innerHTML = '<p>Você é Estrangeiro!</p>'
+            }    
+        }
+    </script>
+</body>
+</html>
