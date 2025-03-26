@@ -1,3 +1,3 @@
 let num = []
 
-console.log(num)
+console.log(`Nosso vetor é o ${num}`)
