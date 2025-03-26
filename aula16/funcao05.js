@@ -7,7 +7,7 @@ function fatorial(n) {
     }
 }
 
-
+console.log(fatorial(5))
 
 /*
 
