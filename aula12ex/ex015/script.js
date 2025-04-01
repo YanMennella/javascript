@@ -8,6 +8,12 @@ function verificar() {
     } else {
         var fsex = document.getElementsByName('radsex')
         var idade = ano - Number(fano.value)
-        res.innerHTML = `Idade calculada: ${idade}`
+        var gênero = ''
+        if (fsex[0].checked) {
+            gênero = 'Homem'
+        } else if (fsex[1].checked) {
+            gênero = 'Mulher'
+        }
+        res.innerHTML = `Detectamos ${gênero} com ${idade} anos.`
     }
 }
