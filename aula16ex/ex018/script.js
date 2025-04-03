@@ -20,8 +20,8 @@ function inLista(n, l) {
 }
 
 function adicionar() {
-    if(isNumero(num.value) && !inlista(num.value)) {
-        window.alert('Tudo Ok')
+    if(isNumero(num.value) && !inLista(num.value, valores)) {
+        
     } else {
         window.alert('Valor inválido ou já encontrado na lista.')
     }
