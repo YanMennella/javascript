@@ -13,13 +13,15 @@ function isNumero(n) {
 
 function inLista(n, l) {
     if (l.indexOf(Number(n)) != -1) {
-        
+        return true
+    } else {
+        return false
     }
 }
 
 function adicionar() {
     if(isNumero(num.value) && !inlista(num.value)) {
-
+        window.alert('Tudo Ok')
     } else {
         window.alert('Valor inválido ou já encontrado na lista.')
     }
