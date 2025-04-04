@@ -36,7 +36,10 @@ function finalizar() {
     if (valores.length == 0) {
         window.alert('Adicione valores antes de finalizar!')
     } else {
+        let tot = valores.length
+        
         res.innerHTML = ''
+        res.innerHTML += `<p>Ao todo, temos ${tot} números cadastrados.</p>`
         
     }
 }
